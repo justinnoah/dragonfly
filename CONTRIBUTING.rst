@@ -116,7 +116,10 @@ This allows the engine's dependencies to be installed using something like:
 
 .. code:: shell
 
-   $ pip install dragonfly2[EngineX]
+   $ # For development
+   $ pip install ".[EngineX]"
+   $ # Once on pipy
+   # pip install dragonfly2[EngineX]
 
 In addition to the engine implementation, each engine should define its own
 test suite in the *dragonfly/test/suites.py* file. For example:
